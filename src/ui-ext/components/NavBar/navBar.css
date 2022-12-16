@@ -1,0 +1,20 @@
+.navBarContainer {
+  padding: 10px 30px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+span {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+span:hover {
+  color: blue;
+}
+
+.options {
+  margin-left: 40px;
+}/*# sourceMappingURL=navBar.css.map */
