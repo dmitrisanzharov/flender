@@ -1,5 +1,6 @@
 import React from 'react'
 import './navBar.css'
+import { Link } from 'react-router-dom';
 
 // components
 import FlenderLogo from '../FlenderLogo/FlenderLogo'
@@ -10,13 +11,18 @@ function NavBar() {
             <FlenderLogo />
 
 
-            <div className='options'>
-                <span>Invest</span><span>Business Loan</span><span>Marketplace</span><span>About</span><span>Contact</span>
+            <div className='navBarContainer_items'>
+                <span className='navBarContainer_items_singleItem'>Invest</span><span className='navBarContainer_items_singleItem'>Business Loan</span><span className='navBarContainer_items_singleItem'>Marketplace</span><span className='navBarContainer_items_singleItem'>About</span><span className='navBarContainer_items_singleItem'>Contact</span>
             </div>
 
 
-            <div>
-
+            <div className='navBarContainer_registerButtonContainer'>
+                <button type="button" className="btn btn-secondary me-3">
+                    Log in
+                </button>
+                <button type="button" className="btn btn-primary">
+                    <Link to='/register' className='registerButtonLink'>Register</Link>
+                </button>
             </div>
 
         </div>

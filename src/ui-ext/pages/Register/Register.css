@@ -1,0 +1,20 @@
+.registerButtonLink {
+  color: white;
+  text-decoration: none;
+}
+
+.registerButtonLink:hover {
+  color: white;
+}
+
+.RegisterContainer {
+  padding: 60px;
+}
+
+.RegisterContainer_input_element {
+  margin-top: 20px;
+}
+
+.RegisterContainer_input_element_area_code {
+  position: absolute;
+}/*# sourceMappingURL=Register.css.map */

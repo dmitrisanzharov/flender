@@ -3,18 +3,19 @@
   border: 1px solid;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
-span {
+.navBarContainer_items {
+  margin-left: 40px;
+}
+
+.navBarContainer_items_singleItem {
   margin: 0px 10px;
   cursor: pointer;
 }
 
-span:hover {
+.navBarContainer_items_singleItem:hover {
   color: blue;
-}
-
-.options {
-  margin-left: 40px;
 }/*# sourceMappingURL=navBar.css.map */
