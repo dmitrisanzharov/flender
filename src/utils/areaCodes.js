@@ -1,1 +1,1 @@
-const areaCodes = ['+353', '+351', '+1', '+431']
+export const areaCodes = ['select', 'ireland', 'germany', 'uk', 'france', 'belgium']

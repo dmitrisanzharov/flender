@@ -1,15 +1,18 @@
 import "./Register.css";
 import React, { useEffect, useState, useRef } from "react";
+import { areaCodes } from '../../../utils/areaCodes';
+import { redirect } from "react-router-dom";
 
 const Register = () => {
     const [fName, setFName] = useState("");
     const [sName, setSName] = useState("");
     const [email, setEmail] = useState('');
     const [tel, setTel] = useState('');
+    const [telArea, setTelArea] = useState('select');
     const [password, setPassword] = useState('');
     const [passwordConfirm, setPasswordConfirm] = useState('');
-    const [showAreaCode, setShowAreaCode] = useState(false);
-
+    const [doPasswordsMatch, setDoPasswordsMatch] = useState(true);
+    const [signUpDisabled, setSignUpDisabled] = useState(true);
 
     // useRefs
     const password1 = useRef();
@@ -31,6 +34,27 @@ const Register = () => {
     }
 
 
+
+
+    // useEffect
+
+    useEffect(() => {
+
+        if (passwordConfirm !== password) {
+            setDoPasswordsMatch(false);
+            setSignUpDisabled(true);
+            return
+        }
+
+        if (password === '' && passwordConfirm === '') {
+            setSignUpDisabled(true);
+            return
+        }
+
+        setDoPasswordsMatch(true);
+        setSignUpDisabled(false);
+
+    }, [passwordConfirm])
 
 
 
@@ -82,7 +106,13 @@ const Register = () => {
                 <div className="RegisterContainer_input_element">
                     <label>Mobile number</label>
                     <br />
-
+                    <select value={telArea} onChange={(e) => setTelArea(e.target.value)}>
+                        {areaCodes && areaCodes.map(el => {
+                            return (
+                                <option value={el} key={el}>{el}</option>
+                            )
+                        })}
+                    </select>
 
 
 
@@ -118,6 +148,14 @@ const Register = () => {
                         ref={passwordConfirm1}
                     />
                     <button type='button' onClick={() => showPassword(passwordConfirm1)} >show</button>
+                    {!doPasswordsMatch && (
+                        <span style={{ color: 'red', border: '1px solid red', marginLeft: '20px', padding: '10px' }}>passwords do NOT match</span>
+                    )}
+                </div>
+
+
+                <div className="RegisterContainer_input_element">
+                    <button type='submit' disabled={signUpDisabled}>Sign Up</button>
                 </div>
 
 
