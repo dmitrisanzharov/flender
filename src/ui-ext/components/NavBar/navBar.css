@@ -18,4 +18,18 @@
 
 .navBarContainer_items_singleItem:hover {
   color: blue;
+}
+
+.navBarContainer_registerButtonContainer {
+  position: relative;
+}
+
+.navBarContainer_registerButtonContainer_LoggedOutNotification {
+  width: 200px;
+  padding: 20px;
+  background-color: lightblue;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  z-index: 1000;
 }/*# sourceMappingURL=navBar.css.map */

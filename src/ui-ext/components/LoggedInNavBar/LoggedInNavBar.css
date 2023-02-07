@@ -1,0 +1,116 @@
+.LoggedInNavBarContainer {
+  border: 1px solid black;
+  background-color: lightgray;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.LoggedInNavBarContainer_NavItems {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  width: 40%;
+}
+
+.LoggedInNavBarContainer_NavItems_SingleItem {
+  cursor: pointer;
+}
+
+.LoggedInNavBarContainer_NavItems_SingleItem:hover {
+  color: red;
+}
+
+.LoggedInNavBarContainer_NavRightBox {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.LoggedInNavBarContainer_NavRightBox_AvailableBalance {
+  cursor: pointer;
+}
+
+.LoggedInNavBarContainer_NavRightBox_AvailableBalance {
+  position: relative;
+}
+
+.LoggedInNavBarContainer_NavRightBox_AvailableBalance:hover {
+  color: red;
+}
+
+.LoggedInNavBarContainer_NavRightBox_AvailableBalance_DropDown {
+  position: absolute;
+  border: 1px solid;
+  z-index: 1000;
+  background-color: lightblue;
+  padding: 30px;
+  display: none;
+}
+
+.LoggedInNavBarContainer_NavRightBox_AvailableBalance:focus ~ .LoggedInNavBarContainer_NavRightBox_AvailableBalance_DropDown {
+  display: block;
+}
+
+.LoggedInNavBarContainer_NavRightBox_AvailableBalance_DropDown:active {
+  display: block;
+}
+
+.LoggedInNavBarContainer_NavRightBox_NotificationsBox {
+  font-size: 2em;
+  cursor: pointer;
+  position: relative;
+}
+
+.LoggedInNavBarContainer_NavRightBox_NotificationsBox_SideNotificationsBarAll {
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  background-color: lightblue;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.LoggedInNavBarContainer_NavRightBox_NotificationsBox_SideNotificationsBarAll_ButtonHolder {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.LoggedInNavBarContainer_NavRightBox_NotificationsBox_SideNotificationsBarAll_NotificationsBox {
+  min-width: 300px;
+}
+
+.LoggedInNavBarContainer_NavRightBox_NotificationsBox_SideNotificationsBarAll_MiniNotificationBox {
+  position: absolute;
+  min-width: 300px;
+  background-color: lightpink;
+  top: 15%;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.LoggedInNavBarContainer_NavRightBox_UserNameBox {
+  background-color: lightgreen;
+  border-radius: 50%;
+  min-width: 50px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.LoggedInNavBarContainer_NavRightBox_UserNameBox_SettingsBox {
+  background-color: lightgrey;
+  border: 1px solid;
+  width: 200px;
+  position: absolute;
+  top: 75px;
+  display: none;
+}
+
+.LoggedInNavBarContainer_NavRightBox_UserNameBox:focus-within .LoggedInNavBarContainer_NavRightBox_UserNameBox_SettingsBox {
+  display: block;
+}/*# sourceMappingURL=LoggedInNavBar.css.map */

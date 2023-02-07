@@ -1,0 +1,11 @@
+.DevPageContainer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.InnerDivTest {
+  max-width: 900px;
+  min-width: 550px;
+  width: 600px;
+}/*# sourceMappingURL=DevPage.css.map */

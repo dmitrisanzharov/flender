@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.drr {
+  border: 2px solid red;
+}
+
+.dbb {
+  border: 2px solid blue;
+}
+
+.dgg {
+  border: 2px solid green;
+}
+
+.dyy {
+  border: 2px solid yellow;
+}
+
+.dpp {
+  border: 2px solid pink;
+}
+
+.bgr {
+  background-color: red;
+}
+
+.bgb {
+  background-color: blue;
+}
+
+.bgg {
+  background-color: green;
+}
+
+.bgd {
+  background-color: lightgray;
+}
+
+.bgy {
+  background-color: yellow;
+}
+
+.bgo {
+  background-color: orange;
+}
+
+.bgpnk {
+  background-color: pink;
+}/*# sourceMappingURL=Transactions.css.map */
